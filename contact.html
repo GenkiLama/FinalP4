@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta
       name="keywords"
-      content="entreprise webdesign lyon, la panthère , Entreprise webdesign Lyon , web designer lyon, site internet sur mesure, création site web,
+      content="contact , entreprise webdesign lyon, la panthère , Entreprise webdesign Lyon , web designer lyon, site internet sur mesure, création site web,
     créer un site internet, création de site internet lyon, agence web"
     />
     <meta
       name="description"
-      content="Agence la panthère, entreprise de Webdesign basée à Lyon, nous créons votre site web sur mesure."
+      content="Contactez l'Agence la Panthère, entreprise de Webdesign basée à Lyon, nous créons votre site web sur mesure."
     />
     <meta
       name="viewport"
@@ -37,7 +37,9 @@
     <script src="./js/jquery.touchSwipe.js" defer></script>
     <script src="./js/gmaps.js"></script>
 
-    <title>Contact - Agence la panthère - Entreprise de Webdesign - Lyon</title>
+    <title>
+      Contactez Nous - Agence la panthère - Entreprise de Webdesign - Lyon
+    </title>
 
     <!-- Analytics -->
 
@@ -51,7 +53,7 @@
         <div class="container bloc-sm">
           <nav class="navbar row">
             <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"
+              <a class="navbar-brand" id="logo" href="index.html"
                 ><img
                   src="img/agence-la-panthere-monochrome.svg"
                   alt="Logo de l'Agence la Panthère, entreprise de web design à Lyon"
@@ -72,7 +74,7 @@
             <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
               <ul class="site-navigation nav navbar-nav">
                 <li>
-                  <a href="index.html">Accueil</a>
+                  <a href="index.html" id="accueil">Accueil</a>
                 </li>
               </ul>
             </div>
@@ -80,7 +82,7 @@
         </div>
       </header>
       <!-- bloc-0 END -->
-      <main>
+      <main class="text-center">
         <!-- bloc-6 -->
         <div
           class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
@@ -88,7 +90,7 @@
         >
           <div class="container bloc-lg">
             <div class="row">
-              <div class="col-sm-12">
+              <div class="col-sm-12 opacity radius opacity__contact">
                 <h1 class="text-center hero-bloc-text tc-white">
                   Parlons web design !
                 </h1>
@@ -116,11 +118,16 @@
                   fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
                 >
                   <div class="form-group">
-                    <label> Nom </label>
-                    <input id="name" class="form-control" required />
+                    <label for="name"> Nom </label>
+                    <input
+                      id="name"
+                      class="form-control"
+                      type="text"
+                      required
+                    />
                   </div>
                   <div class="form-group">
-                    <label> Adresse email </label>
+                    <label for="email"> Adresse email </label>
                     <input
                       id="email"
                       class="form-control"
@@ -129,16 +136,18 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label> Comment nous avez-vous connu ? </label>
+                    <label for="input_504">
+                      Comment nous avez-vous connu ?
+                    </label>
                     <input
                       class="form-control"
+                      id="input_504"
                       type="email"
                       required
-                      id="input_504"
                     />
                   </div>
                   <div class="form-group">
-                    <label>
+                    <label for="message">
                       Brief de votre projet (Ajoutez autant de détails que
                       nécessaire)<br /> </label
                     ><textarea
@@ -170,54 +179,73 @@
 
         <!-- ScrollToTop Button -->
         <a
+          href="contact.html"
           class="bloc-button btn btn-d scrollToTop"
           onclick="scrollToTarget('1')"
+          tabindex="0"
+          title="retour en haut de page"
           ><span class="fa fa-chevron-up"></span
         ></a>
         <!-- ScrollToTop Button END-->
       </main>
       <!-- Footer - bloc-8 -->
-      <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+      <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
         <div class="container bloc-sm">
           <div class="row">
             <div class="col-sm-12">
-              <p class="text-center white">
+              <p class="text-center black">
                 Agence La Panthère - Agence web basée à Lyon.<br />
               </p>
               <div class="row row-no-gutters social">
                 <div class="col-sm-3">
-                  <div class="text-center">
-                    <a class="social" href="index.html"
-                      ><span class="fa fa-twitter icon-md"></span
-                    ></a>
+                  <div class="text-center icon-container">
+                    <a
+                      class="social focus"
+                      title="liens vers notre compte twitter"
+                      href="index.html"
+                      ><span class="fa fa-twitter icon-md"></span>
+                      <span class="white">Twitter</span></a
+                    >
                   </div>
                 </div>
                 <div class="col-sm-3">
-                  <div class="text-center">
-                    <a class="social" href="index.html"
+                  <div class="text-center icon-container">
+                    <a
+                      class="social focus"
+                      title="liens vers notre compte Facebook"
+                      href="index.html"
                       ><span class="fa fa-facebook icon-md"></span
-                    ></a>
+                      ><span class="white">Facebook</span></a
+                    >
                   </div>
                 </div>
                 <div class="col-sm-3">
-                  <div class="text-center">
-                    <a class="social" href="index.html"
+                  <div class="text-center icon-container">
+                    <a
+                      class="social focus"
+                      title="liens vers notre compte Dribble"
+                      href="index.html"
                       ><span class="fa fa-dribbble icon-md"></span
-                    ></a>
+                      ><span class="white">Dribble</span></a
+                    >
                   </div>
                 </div>
                 <div class="col-sm-3">
-                  <div class="text-center">
-                    <a class="social" href="index.html"
+                  <div class="text-center icon-container">
+                    <a
+                      class="social focus"
+                      title="liens vers notre compte Instagram"
+                      href="index.html"
                       ><span class="fa fa-instagram icon-md"></span
-                    ></a>
+                      ><span class="white">Instagram</span></a
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
       <!-- Footer - bloc-8 END -->
     </div>
     <!-- Principal conteneur END -->

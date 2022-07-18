@@ -96,10 +96,6 @@ a:hover {
   background-size: 280px 280px;
 }
 
-.b-parallax {
-  background-attachment: fixed;
-}
-
 .d-bloc {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -525,7 +521,8 @@ button {
   opacity: 0;
   z-index: 500;
   transition: all 0.3s ease-in-out;
-  background-color: #777777;
+  background-color: #181818;
+  border: 2px solid white;
 }
 .scrollToTop:hover {
   background-color: #333333;
@@ -839,7 +836,7 @@ h4 {
 }
 
 .bg-dots-bg {
-  background-image: url("img/dots-bg.avif");
+  background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
@@ -877,24 +874,9 @@ h4 {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .b-parallax {
-    background-attachment: scroll;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-  .b-parallax {
-    background-attachment: scroll;
-  }
-}
-
 @media (max-width: 991px) {
   .container {
     width: 100%;
-  }
-  .b-parallax {
-    background-attachment: scroll;
   }
   .page-container,
   #hero-bloc {
@@ -933,9 +915,6 @@ h4 {
   #disqus_thread {
     padding-left: 10px !important;
     padding-right: 10px !important;
-  }
-  .b-parallax {
-    background-attachment: scroll;
   }
   .navbar .nav {
     padding-top: 0;
@@ -1093,6 +1072,14 @@ h4 {
 .opacity {
   background-color: rgba(0, 0, 0, 0.61);
 }
+.opacity__contact {
+  background-color: black;
+  opacity: 0.8;
+  margin: 0 20px;
+}
+.radius {
+  border-radius: 40px;
+}
 .icon-container {
   padding: 2rem 1rem;
   background: rgba(0, 0, 0, 0.637);
@@ -1113,10 +1100,6 @@ h4 {
 #contact:focus {
   border: 4px solid red;
 }
-/* #logo:hover {
-  color: red;
-  border: 4px solid red;
-} */
 #logo:focus {
   color: red;
   border: 4px solid red;
