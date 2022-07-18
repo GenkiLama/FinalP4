@@ -332,7 +332,11 @@ a:hover {
 .navbar-nav .open .dropdown-menu > li > a {
   text-align: inherit;
 }
-
+.nav > li a {
+  border: 2px solid rgb(48, 48, 48);
+  margin: 2px;
+  border-radius: 10px;
+}
 .nav > li a:hover,
 .nav > li a:focus {
   background: transparent;
@@ -818,7 +822,7 @@ h4 {
 }
 
 .ltc-white:hover {
-  color: #cccccc !important;
+  color: #f88542 !important;
 }
 
 .ltc-atomic-tangerine {
@@ -951,7 +955,7 @@ h4 {
   .nav > li {
     margin-top: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(247, 40, 40, 0.05);
     text-align: left;
     padding-left: 15px;
     width: 100%;
@@ -1097,20 +1101,16 @@ h4 {
   display: flex;
   flex-direction: column;
 }
-/* #accueil:hover {
-  color: red;
-  border: 4px solid red;
-} */
+#accueil:hover {
+  color: #ff6a25 !important;
+}
 #accueil:focus {
-  color: red;
   border: 4px solid red;
 }
-/* #contact:hover {
-  color: red;
-  border: 4px solid red;
-} */
+#contact:hover {
+  color: #ff6a25 !important;
+}
 #contact:focus {
-  color: red;
   border: 4px solid red;
 }
 /* #logo:hover {
@@ -1121,10 +1121,7 @@ h4 {
   color: red;
   border: 4px solid red;
 }
-/* #contact-btn:hover {
-  color: red;
-  border: 4px solid red;
-} */
+
 #contact-btn:focus {
   color: red;
   border: 4px solid red;
